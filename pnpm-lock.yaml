@@ -5,6 +5,12 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@instantdb/admin':
+    specifier: ^0.17.10
+    version: 0.17.10
+  '@instantdb/react':
+    specifier: ^0.17.10
+    version: 0.17.10(react@18.3.1)
   next:
     specifier: 15.0.3
     version: 15.0.3(react-dom@18.3.1)(react@18.3.1)
@@ -331,6 +337,28 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /@instantdb/admin@0.17.10:
+    resolution: {integrity: sha512-SqaeySz69oPxpo+9OiT5+GcEhW0+l24jfP8mJe5qjsXcnfFSnjVshjZ52aw80TNBSnq/7mmWBzrh17o3Bd2O+w==}
+    dependencies:
+      '@instantdb/core': 0.17.10
+    dev: false
+
+  /@instantdb/core@0.17.10:
+    resolution: {integrity: sha512-IP75OSL3bH71YYk4Qj6c6q7AAsZHkYCoU4Z1LaeEPw2ATs9CkSaWuh75uM3P4iRuWOw/0yg+C+70IURAozciqg==}
+    dependencies:
+      mutative: 1.1.0
+      uuid: 9.0.1
+    dev: false
+
+  /@instantdb/react@0.17.10(react@18.3.1):
+    resolution: {integrity: sha512-Gngyet5duKQB9qYnpmTmoLb5OyAt67ElnNKBsw4zO/ry8tLz3wbT5omAuqdG0vv+Z0PT060G6SF+vfqt/ImxMw==}
+    peerDependencies:
+      react: '>=16'
+    dependencies:
+      '@instantdb/core': 0.17.10
+      react: 18.3.1
+    dev: false
 
   /@isaacs/cliui@8.0.2:
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
@@ -2185,6 +2213,11 @@ packages:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
     dev: true
 
+  /mutative@1.1.0:
+    resolution: {integrity: sha512-2PJADREjOusk3iJkD3rXV2YjAxTuaLxdfqtqTEt6vcY07LtEBR1seHuBHXWEIuscqRDGvbauYPs+A4Rj/KTczQ==}
+    engines: {node: '>=14.0'}
+    dev: false
+
   /mz@2.7.0:
     resolution: {integrity: sha512-z81GNO7nnYMEhrGh9LeymoE4+Yr0Wn5McHIZMK5cfQCl+NDX08sCZgUc9/6MHni9IWuFLm1Z3HTCXu2z9fN62Q==}
     dependencies:
@@ -3058,6 +3091,11 @@ packages:
   /util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
     dev: true
+
+  /uuid@9.0.1:
+    resolution: {integrity: sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA==}
+    hasBin: true
+    dev: false
 
   /which-boxed-primitive@1.0.2:
     resolution: {integrity: sha512-bwZdv0AKLpplFY2KZRX6TvyuN7ojjr7lwkg6ml0roIy9YeuSr7JS372qlNW18UQYzgYK9ziGcerWqZOmEn9VNg==}
